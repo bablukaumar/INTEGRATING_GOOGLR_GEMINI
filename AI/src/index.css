@@ -1,0 +1,81 @@
+.heading {
+  /* border: 3px solid red; */
+  position: fixed;
+  width: 1315px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: darkgrey;
+  color: red;
+  border-radius: 20px;
+  border-bottom: 10px solid black;
+  box-shadow: 5px 1px 5px 2px rgba(0, 0, 0, 0.5);
+  
+}
+.input-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 25px;
+  color: #ffff;
+}
+.input-field {
+  width: 900px;
+  outline: none;
+  background-color: darkgrey;
+  border: none;
+}
+.input-field::placeholder {
+  color: #fff;
+  opacity: 1; /* Ensures full opacity on some browsers */
+}
+.button {
+  background-color: darkgrey;
+  border: none;
+  color: blue;
+}
+.question {
+  word-spacing: 3px;
+  letter-spacing: 2px;
+  margin: 30px 20px;
+  background-color: darkgray;
+  display: inline-block;
+
+  border-radius: 20px;
+  height: 50px;
+  padding: 5px;
+}
+.result {
+  margin-top: 150px;
+  border: 10px solid darkgray;
+  border-radius: 25px;
+  background-color: black;
+  color: red;
+  font-size: 22px;
+}
+.resultData {
+  background-color: darkgrey;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 25px;
+  padding: 10px;
+}
+
+@media (max-width: 760px) {
+  .heading{
+    width: 550px;
+  }
+  .input-field {
+    width: 500px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .heading{
+    width: 700px;
+  }
+  .input-field {
+    width: 700px;
+  }
+}
